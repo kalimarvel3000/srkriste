@@ -1,0 +1,82 @@
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    /* border: 2px solid red; */
+}
+
+.card {
+    height: 250px;
+    width: 220px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /* border: 2px solid red; */
+}
+
+.intro {
+    height: 0;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px black;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.intro h1 {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.intro p {
+    margin: 20px;
+    font-size: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card:hover .intro {
+    height: 150px;
+    opacity: 1;
+}
+.dept{
+    text-align: center;
+    font-weight: bold;
+    font-family: "RalewayHeavy";
+	font-size: 36px;
+    text-transform: uppercase;
+}
+.aboutiste{
+    line-height: 30px;
+}
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px;
+    }
+}

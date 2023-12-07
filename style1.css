@@ -1,0 +1,120 @@
+.card img {
+    height: 250px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+    /* background-color: whitesmoke; */
+}
+
+.card {
+    height: 250px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.intro {
+    height: 0;
+    width: 0;
+    padding: 6px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px black;
+    position: absolute;
+    /* bottom: 240px; */
+    background-color: white;
+    color: black;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.intro h1 {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.intro p {
+    margin: 20px;
+    font-size: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+.card:hover .intro{
+    visibility: visible;
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+    color: black;
+}
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        margin: 10px;
+    }
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #ffc537;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.popup-image {
+    max-width: 100%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}

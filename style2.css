@@ -1,0 +1,30 @@
+.description {
+    height: auto;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 4% auto;
+    margin-bottom: 2%;
+    line-height: 1.5;
+    word-spacing: 2px;
+    color: rgb(60, 57, 57);
+    box-shadow: 5px 5px 20px black;
+    padding: 20px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .description {
+        width: 90%;
+        margin: 4% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description {
+        width: 95%;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
